@@ -1,3 +1,4 @@
+
 header {
     position: relative;
     display: flex;
@@ -31,27 +32,34 @@ header h1 {
 
 /* Mobil */
 @media (max-width: 500px) {
+    header {
+        min-height: 70px; /* ÄNDRAD */
+        padding: 10px;
+    }
+
     .logo {
-        width: 70px;
+        width: 50px; /* ÄNDRAD */
+        left: 8px; /* ÄNDRAD */
     }
 
     header h1 {
-        width: calc(100% - 120px);
-        font-size: 30px;
+        width: calc(100% - 75px); /* ÄNDRAD */
+        font-size: 22px; /* ÄNDRAD */
+        left: 55%; /* ÄNDRAD */
     }
 }
 
-body{
+body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
 }
 
 .container {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
-  max-width: 500px;
-  margin: 50px auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 500px;
+    margin: 50px auto;
 }
 
 .bakgrund {
@@ -72,9 +80,9 @@ body{
     border-radius: 5px;
     font-size: 15px;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
-    text-decoration: none; 
+    text-decoration: none;
     color: rgb(230,230,230);
     width: 85%;
     max-width: 500px;
@@ -82,7 +90,7 @@ body{
     margin: 10px auto;
 }
 
-.info{
+.info {
     background-color: rgb(0,0,60);
     padding: 10px;
     margin: 30px auto;
@@ -94,10 +102,31 @@ body{
     text-align: center;
 }
 
-.info img{
+.info img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
     object-position: center 20%;
+}
+
+/* NY: Extra mobilanpassning */
+@media (max-width: 500px) {
+    .info {
+        width: 90%; /* ÄNDRAD */
+        padding: 15px; /* ÄNDRAD */
+        font-size: 16px; /* NY */
+    }
+
+    .box {
+        width: 90%; /* ÄNDRAD */
+        font-size: 17px; /* ÄNDRAD */
+        padding: 10px; /* ÄNDRAD */
+    }
+
+    .container {
+        width: 100%; /* NY */
+        margin: 25px auto; /* ÄNDRAD */
+        gap: 15px; /* ÄNDRAD */
+    }
 }
