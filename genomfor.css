@@ -1,0 +1,84 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    text-align: center;
+}
+
+.pass {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 20px;
+    color: white;
+}
+
+#stegNummer {
+    text-align: center;
+    font-size: 16px;
+}
+
+.passruta {
+    background-color: white;
+    color: black;
+    padding: 25px;
+    border-radius: 10px;
+    min-height: 220px;
+}
+
+.passruta h2 {
+    margin-top: 0;
+    font-size: 26px;
+}
+
+.passruta p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.passknappar {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.passknappar button {
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.passknappar button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+@media (max-width: 500px) {
+    .pass {
+        padding: 12px;
+    }
+
+    .passruta {
+        padding: 18px;
+    }
+}
+
+.avslutaknapp {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background-color: rgb(255,0,0);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 6px;
+
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+    z-index: 1000;
+}
