@@ -33,19 +33,18 @@ header h1 {
 /* Mobil */
 @media (max-width: 500px) {
     header {
-        min-height: 70px; /* ÄNDRAD */
-        padding: 10px;
+        min-height: 85px;
     }
 
     .logo {
-        width: 50px; /* ÄNDRAD */
-        left: 8px; /* ÄNDRAD */
+        width: 50px;
+        left: 8px;
     }
 
     header h1 {
-        width: calc(100% - 75px); /* ÄNDRAD */
-        font-size: 22px; /* ÄNDRAD */
-        left: 55%; /* ÄNDRAD */
+        width: calc(100% - 110px);
+        left: 50%;
+        font-size: 26px;
     }
 }
 
@@ -113,7 +112,7 @@ body {
 /* NY: Extra mobilanpassning */
 @media (max-width: 500px) {
     .info {
-        width: 90%; /* ÄNDRAD */
+        width: 85%; /* ÄNDRAD */
         padding: 15px; /* ÄNDRAD */
         font-size: 16px; /* NY */
     }
