@@ -14,10 +14,26 @@
     text-align: center;
     font-size: 18px;
     z-index: 1000;
+    white-space: nowrap; /* NY */
 }
 
-body{
+body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     padding-left: 60px;
+}
+
+/* Mobil */
+@media (max-width: 500px) {
+
+    .startknapp {
+        font-size: 20px; /* ÄNDRAD */
+        padding: 18px 35px; /* ÄNDRAD */
+        bottom: 15px; /* ÄNDRAD */
+    }
+
+    body {
+        padding-left: 15px; /* ÄNDRAD */
+        padding-right: 15px; /* NY */
+    }
 }
