@@ -1,10 +1,19 @@
 
-.startknapp {
+.knappcontainer {
     position: fixed;
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    z-index: 1000;
+}
+
+.startknapp,
+.pdfknapp {
     background-color: rgb(0,180,90);
     color: white;
     padding: 15px 30px;
@@ -13,8 +22,7 @@
     text-decoration: none;
     text-align: center;
     font-size: 18px;
-    z-index: 1000;
-    white-space: nowrap; /* NY */
+    white-space: nowrap;
 }
 
 body {
@@ -26,14 +34,20 @@ body {
 /* Mobil */
 @media (max-width: 500px) {
 
-    .startknapp {
-        font-size: 20px; /* ÄNDRAD */
-        padding: 18px 35px; /* ÄNDRAD */
-        bottom: 15px; /* ÄNDRAD */
+    .knappcontainer {
+        bottom: 15px;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .startknapp,
+    .pdfknapp {
+        font-size: 16px;
+        padding: 12px 15px;
     }
 
     body {
-        padding-left: 15px; /* ÄNDRAD */
-        padding-right: 15px; /* NY */
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
